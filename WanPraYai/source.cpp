@@ -19,7 +19,7 @@ int main()
     }
     else
     {
-        cout << "Normal day" << endl;
+        cout << "Normal Day" << endl;
     }
     return 0;
 }
