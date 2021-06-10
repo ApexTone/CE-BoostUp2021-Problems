@@ -16,12 +16,6 @@ Testcase
 int main()
 {
     long changeLength, goalLength; //number of change, number of question
-    cin >> goalLength;
-    long goalList[11000]; //target money to achieve
-    for (long i = 0; i < goalLength; i++)
-    {
-        cin >> goalList[i];
-    }
 
     cin >> changeLength;
 
@@ -31,6 +25,13 @@ int main()
         long temp;
         cin >> temp;
         changeList[i] = temp + ((i >= 1) * changeList[i - 1]);
+    }
+
+    cin >> goalLength;
+    long goalList[11000]; //target money to achieve
+    for (long i = 0; i < goalLength; i++)
+    {
+        cin >> goalList[i];
     }
 
     /*  Quicksum debug
