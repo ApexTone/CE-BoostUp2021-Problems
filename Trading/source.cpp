@@ -24,7 +24,7 @@ int main()
     {
         long temp;
         cin >> temp;
-        changeList[i] = temp + ((i >= 1) * changeList[i - 1]);
+        changeList[i] = temp + ((i >= 1) * changeList[i - 1]); // Quick sum here (changeList will store exact value)
     }
 
     cin >> goalLength;
@@ -33,14 +33,6 @@ int main()
     {
         cin >> goalList[i];
     }
-
-    /*  Quicksum debug
-    for (long i = 0; i < changeLength; i++)
-    {
-        cout << changeList[i] << " ";
-    }
-    cout << endl;
-    */
 
     vector<pair<long, long>> p;
     long maxValue = LONG_MIN;
